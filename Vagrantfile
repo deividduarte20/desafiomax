@@ -2,8 +2,8 @@
 # vi: set ft=ruby  :
 
 machines = {
-  "desafiomax1" => {"memory" => "1024", "cpu" => "2", "ip" => "10", "image" => "centos/7"},
-  "desafiomax2" => {"memory" => "2048", "cpu" => "2", "ip" => "20", "image" => "centos/7"},
+  "desafiomax1" => {"memory" => "1024", "cpu" => "2", "ip" => "10", "image" => "debian/buster64"},
+  "desafiomax2" => {"memory" => "2048", "cpu" => "2", "ip" => "20", "image" => "debian/buster64"},
 }
 
 Vagrant.configure("2") do |config|

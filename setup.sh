@@ -1,9 +1,7 @@
 #!/bin/bash
 
-echo ------- Seja bem vindo -------
+$(sudo apt install nginx -y)
 
-echo Instalando ansible
-sudo apt install ansible -y
-
-echo Instalando nginx
-sudo apt install nginx -y
+echo "Address: 192.168.50.10"
+echo "User: vagrant"
+echo "Autenticação por chave shh"

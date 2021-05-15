@@ -1,27 +1,14 @@
-# -*- mode: ruby -*-
-# vi: set ft=ruby  :
-
-machines = {
-  "desafio1" => {"memory" => "1024", "cpu" => "2", "ip" => "10", "image" => "debian/buster64"},
-  "desafio2" => {"memory" => "2048", "cpu" => "2", "ip" => "20", "image" => "debian/buster64"},
-}
-
 Vagrant.configure("2") do |config|
 
-  config.vm.box_check_update = false
-  config.vm.boot_timeout = 600
-  machines.each do |name, conf|
-    config.vm.define "#{name}" do |machine|
-      machine.vm.box = "#{conf["image"]}"
-      machine.vm.hostname = "#{name}.4labs.example"
-      machine.vm.network "private_network", ip: "10.5.25.#{conf["ip"]}"
-      machine.vm.provider "virtualbox" do |vb|
-        vb.name = "#{name}"
-        vb.memory = conf["memory"]
-        vb.cpus = conf["cpu"]
-        vb.customize ["modifyvm", :id, "--groups", "/525-InfraAgil"]
-			end
-		end
-	end
+# Configurando a VM
+  config.vm.define:desafio do |desafio_config|
+    desafio_config.vm.box = "debian/buster64"
+    desafio_config.vm.network :private_network, ip: "192.168.50.10"
+    desafio_config.vm.provider:virtualbox do |v|
+      v.memory = 2048
+      v.cpus = 1
+      
+    end
+  end
   config.vm.provision :shell, path: "setup.sh"
 end

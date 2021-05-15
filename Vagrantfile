@@ -10,5 +10,11 @@ Vagrant.configure("2") do |config|
       
     end
   end
-  config.vm.provision :shell, path: "setup.sh"
+  config.vm.provision "shell", inline: <<-SHELL
+    # Instalando Nginx
+    sudo apt install nginx -y
+    echo "Address: 192.168.50.10"
+    echo "User: vagrant"
+    echo "Autenticação por chave shh"
+  SHELL
 end

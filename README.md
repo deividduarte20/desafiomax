@@ -43,5 +43,9 @@ Após os passo anteriores entre no diretório desafiomax e execute o comando par
 
 vagrant up
 
+Para logar na máquina virtual criada pelo vagrant execute o comando:
+
+vagrant ssh
+
 
 

@@ -1,4 +1,6 @@
 
+# Esse projeto contém arquivo de Vagrantfile personalizado para provisionar máquina virtual Debian busterX64.
+
 
 # Sumário
 
@@ -13,13 +15,15 @@
 Vagrant
 Git
 
+Executos os comandos a seguir logado como root
+
 Para baixar e instalar o vagrant no windows clique no link: https://www.vagrantup.com/downloads
 
 Para instalar no Debian/Ubuntu execute o comando:
-sudo apt install vagrant -y
+apt install vagrant -y
 
 Para instalar no Centos execute o comando:
-sudo yum install vagrant -y
+yum install vagrant -y
 
 Para clonar este reposítório do seu linux basta rodar o comando:
 
@@ -34,6 +38,10 @@ git clone
     Vagrantfile
 
 # Uso:
+
+Após os passo anteriores entre no diretório desafiomax e execute o comando para provisionar a máquina virtual:
+
+vagrant up
 
 
 

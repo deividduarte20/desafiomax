@@ -1,9 +1,10 @@
+
+
 # Sumário
 
    ### Requisitos
    ### Downloads
-   ### Configuração
-   ### Importar template
+   ### Uso
    ### Conclusão
 
 
@@ -32,7 +33,7 @@ git clone
     setup.sh
     Vagrantfile
 
-# Configuração:
+# Uso:
 
 
 

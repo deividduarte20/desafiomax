@@ -1,5 +1,5 @@
 
-## Esse projeto contém arquivo de Vagrantfile personalizado para provisionar máquina virtual Debian busterX64.
+## Esse projeto contém arquivo de Vagrantfile personalizado para provisionar máquina virtual Debian busterX64 com nginx instalado
 
 
 # Sumário

@@ -15,7 +15,7 @@
 Vagrant
 Git
 
-Executos os comandos a seguir logado como root
+Execute os comandos a seguir logado como root
 
 Para baixar e instalar o vagrant no windows clique no link: https://www.vagrantup.com/downloads
 

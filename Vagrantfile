@@ -1,3 +1,14 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+$script = <<-EOF
+sudo apt install nginx -y
+sudo systemctl restart nginx
+cp /vagrant/index.html /var/www/html/index.html
+EOF
+
+
+
 Vagrant.configure("2") do |config|
 
 # Configurando a VM
@@ -9,12 +20,6 @@ Vagrant.configure("2") do |config|
       v.cpus = 1
       
     end
+  config.vm.provision "shell", inline: $script
   end
-  config.vm.provision "shell", inline: <<-SHELL
-    # Instalando Nginx
-    sudo apt install nginx -y
-    echo "Address: 192.168.50.10"
-    echo "User: vagrant"
-    echo "Autenticação por chave shh"
-  SHELL
 end

@@ -13,13 +13,14 @@
 # Requisitos:
 
 As etapas devem ser seguidas em um computador com o SO Linux.
+
+Debian Buster x64/Centos 8
 Vagrant
 Git
 ansible
 
 Execute os comandos a seguir logado como root
 
-Para baixar e instalar o vagrant no windows clique no link: https://www.vagrantup.com/downloads
 
 Para instalar no Debian/Ubuntu execute o comando:
 apt install vagrant -y
@@ -29,7 +30,7 @@ yum install vagrant -y
 
 Para clonar este reposítório do seu linux basta rodar o comando:
 
-git clone 
+git clone https://github.com/deividduarte20/desafiomax.git
 
 # Downloads:
   

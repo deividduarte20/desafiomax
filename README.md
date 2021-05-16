@@ -12,8 +12,10 @@
 
 # Requisitos:
 
+As etapas devem ser seguidas em um computador com o SO Linux.
 Vagrant
 Git
+ansible
 
 Execute os comandos a seguir logado como root
 

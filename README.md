@@ -14,7 +14,7 @@
 
 As etapas devem ser seguidas em um computador com o SO Linux.
 
-Debian Buster x64/Centos 8
+Debian Buster x64/Ubuntu Focal Fossa 20.04.02 LTS/Centos 8
 Vagrant
 Git
 ansible

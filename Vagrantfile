@@ -3,8 +3,8 @@
 
 $script = <<-EOF
 sudo apt install nginx -y
-sudo systemctl restart nginx
 cp /vagrant/index.html /var/www/html/index.html
+sudo systemctl restart nginx
 EOF
 
 

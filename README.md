@@ -1,5 +1,5 @@
 
-## Esse projeto contém arquivo de Vagrantfile personalizado para provisionar máquina virtual Debian busterX64 com nginx instalado
+## Esse projeto consiste em provisionar maquina virtual com zabbix server instalado, e uma página web de consulta de CEP de forma automatizada.
 
 
 # Sumário
@@ -12,21 +12,22 @@
 
 # Requisitos:
 
-As etapas devem ser seguidas em um computador com o SO Linux.
-
-Debian Buster x64/Ubuntu Focal Fossa 20.04.02 LTS/Centos 8
+VirtualBox
 Vagrant
 Git
 ansible
 
-Execute os comandos a seguir logado como root
-
+Caso esteja usando linux execute o comando a seguir de acordo a distribuição que você usa, execute logado como root
 
 Para instalar no Debian/Ubuntu execute o comando:
 apt install vagrant -y
 
 Para instalar no Centos execute o comando:
 yum install vagrant -y
+
+Para instalar o vagrant no windows clique no link abaixo:
+
+https://www.vagrantup.com/downloads
 
 Para clonar este reposítório do seu linux basta rodar o comando:
 
@@ -49,6 +50,14 @@ vagrant up
 Para logar na máquina virtual criada pelo vagrant execute o comando:
 
 vagrant ssh
+
+Para acessar a página web com serviço viacep basta abrir o seu navegador e digitar:
+
+http://192.168.50.10
+
+Para acessar a página do zabbix-server asta abrir o seu navegador e digitar:
+
+http://192.168.50.10/zabbix
 
 
 

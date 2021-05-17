@@ -21,15 +21,7 @@ https://www.vagrantup.com/downloads
 
 Para clonar este reposítório do seu linux basta rodar o comando:
 
-git clone https://github.com/deividduarte20/desafiomax.git
-
-# Downloads:
-  
-    Baixe os arqivos:
-    index.html - Página viacep (página que consulta cep)
-    README.md - Instruções
-    Vagrantfile - Arquivo para provisionar máquina virtual através do vagrant
-    zabbix.conf.php - Arquivo uzado para autocompletar processo de finalização de instalação do zabbix-server  
+git clone https://github.com/deividduarte20/desafiomax.git  
     
 # Uso:
 

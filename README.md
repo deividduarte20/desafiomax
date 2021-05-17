@@ -53,7 +53,7 @@ Para acessar a página web com serviço viacep basta abrir o seu navegador e dig
 
 http://192.168.50.10
 
-Para acessar a página do zabbix-server asta abrir o seu navegador e digitar:
+Para acessar a página do zabbix-server basta abrir o seu navegador e digitar:
 
 http://192.168.50.10/zabbix
 

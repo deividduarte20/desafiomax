@@ -1,5 +1,5 @@
 
-# Automação de Ambiente
+# Automação de Laboratório
 Esse projeto consiste em provisionar maquina virtual com zabbix server instalado, e uma página web de consulta de CEP de forma automatizada.
 
 # Requisitos:

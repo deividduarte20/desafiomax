@@ -41,5 +41,5 @@ Para acessar a página do zabbix-server basta abrir o seu navegador e digitar:
 
 http://192.168.50.10/zabbix
 
-
-
+Usuário: Admin
+Senha: zabbix

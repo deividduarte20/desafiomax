@@ -11,10 +11,9 @@
 
 
 # Requisitos:
-
-VirtualBox
-Vagrant
-Git
+   Git (Opcional pois você pode baixar a pasta desafiomax com )
+   VirtualBox
+   Vagrant
 
 Caso esteja usando linux execute o comando a seguir de acordo a distribuição que você usa, execute logado como root
 

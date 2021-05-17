@@ -1,5 +1,5 @@
 
-## Esse projeto consiste em provisionar maquina virtual com zabbix server instalado, e uma página web de consulta de CEP de forma automatizada.
+# Esse projeto consiste em provisionar maquina virtual com zabbix server instalado, e uma página web de consulta de CEP de forma automatizada.
 
 
 # Sumário
@@ -15,7 +15,6 @@
 VirtualBox
 Vagrant
 Git
-ansible
 
 Caso esteja usando linux execute o comando a seguir de acordo a distribuição que você usa, execute logado como root
 
@@ -36,11 +35,11 @@ git clone https://github.com/deividduarte20/desafiomax.git
 # Downloads:
   
     Baixe os arqivos:
-    index.html
-    README.md
-    setup.sh
-    Vagrantfile
-
+    index.html - Página viacep (página que consulta cep)
+    README.md - Instruções
+    Vagrantfile - Arquivo para provisionar máquina virtual através do vagrant
+    zabbix.conf.php - Arquivo uzado para autocompletar processo de finalização de instalação do zabbix-server  
+    
 # Uso:
 
 Após os passo anteriores entre no diretório desafiomax e execute o comando para provisionar a máquina virtual:

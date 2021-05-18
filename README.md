@@ -4,7 +4,9 @@ Esse projeto consiste em provisionar maquina virtual com zabbix server instalado
 
 # Requisitos:
    Git
+   
    VirtualBox
+   
    Vagrant
 
 Caso esteja usando linux execute o comando a seguir de acordo a distribuição que você usa, execute logado como root

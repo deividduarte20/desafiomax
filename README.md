@@ -50,8 +50,12 @@ Foi cronometrado o tempo para a vm ser provisionada, levando em consideração o
 
 Processador: Intel(R) Core(TM) i3 CPU
 
+SO: Ubuntu
+
 Memória: 8gb ddr3
 
 SSD 240gb
+
+Internet 50mb full
 
 Tempo médio: 7,4 minutos

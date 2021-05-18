@@ -1,0 +1,32 @@
+---
+- hosts: localhost
+  connection: local
+
+  tasks:
+    - name: Create a new host or update an existing host's info
+      local_action:
+        module: community.zabbix.zabbix_host
+        server_url: http://192.168.50.10/zabbix
+        login_user: Admin
+        login_password: zabbix
+        host_name: ServerTest
+        visible_name: ServerTest 
+        description: My Test
+        host_groups:
+          - Linux servers
+        link_templates:
+          - Template OS Linux by Zabbix agent
+          - Template App Apache by HTTP
+        status: enabled
+        state: present
+        ipmi_authtype: 2
+        ipmi_privilege: 4
+        ipmi_username: Admin
+        ipmi_password: zabbix
+        interfaces:
+          - type: 1
+            main: 1
+            useip: 1
+            ip: 192.168.50.10
+            dns: ""
+            port: "10050"

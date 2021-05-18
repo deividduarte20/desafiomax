@@ -14,10 +14,10 @@
     sudo mysql -e "grant all privileges on zabbix.* to zabbix@localhost identified by 'zabbix';";
     sudo zcat /usr/share/doc/zabbix-server-mysql/create.sql.gz | mysql -uzabbix -p"zabbix" zabbix;
     sudo sed 's/# DBPassword=/DBPassword=zabbix/g' /etc/zabbix/zabbix_server.conf -i;
-    sudo sed 's/Server=127.0.0.1/Server=127.0.0.1,192.168.50.10/g;s/ServerActive=127.0.0.1/ServerActive=127.0.0.1,192.168.50.10/g' /etc/zabbix/zabbix_agentd.conf;
-    sudo systemctl restart zabbix-agent.service
+    sudo sed 's/Server=127.0.0.1/Server=127.0.0.1,192.168.50.10/g;s/ServerActive=127.0.0.1/ServerActive=127.0.0.1,192.168.50.10/g' /etc/zabbix/zabbix_agentd.conf -i;
     cp /vagrant/zabbix.conf.php /etc/zabbix/web/
     cp /vagrant/index.html /var/www/html/index.html
+    sudo systemctl restart zabbix-agent.service
     sudo systemctl restart zabbix-server;
     sudo systemctl restart apache2;
     ansible-galaxy collection install community.zabbix;

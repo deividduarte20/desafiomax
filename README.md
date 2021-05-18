@@ -45,7 +45,11 @@ Usuário: Admin
 Senha: zabbix
 
 Foi cronometrado o tempo para a vm ser provisionada, levando em consideração o hardware:
+
 Processador: Intel(R) Core(TM) i3 CPU
+
 Memória: 8gb ddr3
+
 SSD 240gb
+
 Tempo médio: 7,4 minutos

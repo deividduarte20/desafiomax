@@ -1,6 +1,6 @@
 
 # Automação de Laboratório
-Esse projeto consiste em provisionar maquina virtual com zabbix server instalado, e uma página web de consulta de CEP de forma automatizada.
+Esse projeto consiste em provisionar maquina virtual com zabbix server instalado, e uma página web de consulta de CEP de forma automatizada. Insere host automaticamente para monitoramento e adiciona template de monitoramento do apache2.
 
 # Requisitos:
    Git
@@ -25,7 +25,7 @@ git clone https://github.com/deividduarte20/desafiomax.git
     
 # Uso:
 
-Após os passo anteriores entre no diretório desafiomax e execute o comando para provisionar a máquina virtual:
+Após os passos anteriores entre no diretório desafiomax e execute o comando para provisionar a máquina virtual:
 
 vagrant up
 

@@ -1,3 +1,5 @@
+    #!/bin/bash
+    
     wget https://repo.zabbix.com/zabbix/5.0/debian/pool/main/z/zabbix-release/zabbix-release_5.0-1+buster_all.deb
     sudo dpkg -i zabbix-release_5.0-1+buster_all.deb
     sudo apt-get update;
